@@ -1,0 +1,55 @@
+{
+  "name": "root-pkg-dir",
+  "version": "0.0.0",
+  "description": "Find the highest directory with a package.json, starting from from the current working directory.",
+  "license": "MIT",
+  "private": false,
+  "author": {
+    "name": "Connor White",
+    "email": "hello@connorwhite.dev",
+    "url": "https://connorwhite.dev"
+  },
+  "contributors": [],
+  "homepage": "https://github.com/bconnorwhite/root-pkg-dir#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bconnorwhite/root-pkg-dir.git"
+  },
+  "bugs": "https://github.com/bconnorwhite/root-pkg-dir/issues",
+  "keywords": [
+    "root",
+    "pkg",
+    "dir",
+    "directory",
+    "package",
+    "json",
+    "package.json",
+    "ancestor",
+    "parent",
+    "top",
+    "workspace",
+    "monorepo",
+    "find"
+  ],
+  "type": "module",
+  "main": ".auto/build/index.js",
+  "exports": "./.auto/build/index.js",
+  "types": ".auto/build/index.d.ts",
+  "files": [
+    ".auto/build/**/!(tsconfig.tsbuildinfo)"
+  ],
+  "engines": {
+    "node": "^14.13.1 || >=16.0.0"
+  },
+  "scripts": {
+    "build": "auto build",
+    "prepack": "auto build",
+    "release": "auto release"
+  },
+  "dependencies": {
+    "root-pkg-json": "^1.0.2"
+  },
+  "devDependencies": {
+    "autorepo": "^0.1.10"
+  }
+}
