@@ -1,6 +1,6 @@
 {
   "name": "root-pkg-dir",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Find the highest directory with a package.json, starting from from the current working directory.",
   "license": "MIT",
   "private": false,
